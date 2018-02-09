@@ -139,7 +139,7 @@
     position: relative;
     top: 15%;
     width: 40%;
-    left: 5rem;
+    left: 10%;
 }
 .text{
     font-family: 'Electrolize', sans-serif;
@@ -166,7 +166,7 @@
 }
 @keyframes animate{
     0%{
-        content: 'Hábil';
+        content: 'Determinada';
         background-color: rgb(128, 0, 167);
         padding: 0.2em 0.8em;
         border-radius: 5vh;
@@ -201,4 +201,45 @@
         border:2px outset gainsboro;
     }
 
+}
+/* foto */
+.box{
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+}
+.box img{
+    width: 100%;
+    border-radius: 5vh;
+}
+.box .front, .box .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    backface-visibility: hidden;
+    border: 3px outset gainsboro;
+    border-radius: 5vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.box .front{
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 2;
+}
+.box .back{
+    transform: perspective(1000px) rotateY(180deg);
+    z-index: 1;
+}
+.box:hover .front{
+    transform: perspective(1000px) rotateY(-180deg);
+    z-index: 2;
+}
+.box:hover .back{
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 1;
 }
