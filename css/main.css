@@ -130,12 +130,75 @@
     height: 100vh;
 }
 .text-title{
-    font-family: 'Electrolize', serif;
+    font-family: 'Press Start 2P', cursive;
     margin-top: 0;
-    font-weight: bold;
+    font-size: 2.3em;
+    line-height: 2em;
 }
 .text-div2{
     position: relative;
-    top: 22vh;
+    top: 15%;
+    width: 40%;
+    left: 5rem;
+}
+.text{
+    font-family: 'Electrolize', sans-serif;
+    line-height: 1.6rem;
+}
+.gif-plant{
+    padding-top: 2rem;
+    height: 20vh;
+    width: 18vh;
+    margin-right: 3rem;
+    margin-left: 4rem;
+}
+.span{
+    position: absolute;
+    bottom: 2rem;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 1.7em;
+    text-shadow: #00071d 1px 1px;
+    
+}
+.span::before{
+    content: 'Atenta';
+    animation: animate infinite 10s;
+}
+@keyframes animate{
+    0%{
+        content: 'Hábil';
+        background-color: rgb(128, 0, 167);
+        padding: 0.2em 0.8em;
+        border-radius: 5vh;
+        border:2px outset gainsboro;
+    }
+    25%{
+        content: 'Responsable';
+        background-color: rgb(167, 0, 78);
+        padding: 0.2em 0.8em;
+        border-radius: 5vh;
+        border:2px outset gainsboro;
+    }
+    50%{
+        content: 'Empática';
+        background-color: rgb(167, 47, 0);
+        padding: 0.2em 0.8em;
+        border-radius: 5vh;
+        border:2px outset gainsboro;
+    }
+    75%{
+        content: 'Honesta';
+        background-color: rgb(0, 167, 22);
+        padding: 0.2em 0.8em;
+        border-radius: 5vh;
+        border:2px outset gainsboro;
+    }
+    100%{
+        content: 'Apasionada';
+        background-color: rgb(167, 0, 36);
+        padding: 0.2em 0.8em;
+        border-radius: 5vh;
+        border:2px outset gainsboro;
+    }
 
 }
