@@ -312,3 +312,18 @@
 .text-size-skills{
     font-size: 1em;
 }
+/* sección: proyects */
+.background-proyects{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#090c15,#000103);
+}
+.text-projects{
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 7%;
+    width: 25%;
+    position: relative;
+}
