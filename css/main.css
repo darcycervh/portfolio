@@ -41,12 +41,7 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 4.5em;
     font-weight: bold;
-    text-shadow: #00071d 1px 1px,#00071d 2px 2px,#00071d 3px 3px,#00071d 4px 4px,#00071d 5px 5px,#00071d 6px 6px,#00071d 7px 7px,#00071d 8px 8px,#00071d 9px 9px,#00071d 10px 10px,#00071d 11px 11px,#00071d 12px 12px,#00071d 13px 13px,#00071d 14px 14px,#00071d 15px 15px,#00071d 16px 16px,#00071d 17px 17px,#00071d 18px 18px,#00071d 19px 19px,#00071d 20px 20px,#00071d 21px 21px,#00071d 22px 22px,#00071d 23px 23px,#00071d 24px 24px,#00071d 25px 25px;/*
-    #00071d 26px 26px, #00071d 27px 27px,#00071d 28px 28px,#00071d 29px 29px,#00071d 30px 30px,#00071d 31px 31px,#00071d 32px 32px,#00071d 33px 33px,#00071d 34px 34px,#00071d 35px 35px,#00071d 36px 36px,#00071d 37px 37px,#00071d 38px 38px,#00071d 39px 39px,#00071d 40px 40px,#00071d 41px 41px,#00071d 42px 42px,#00071d 43px 43px,#00071d 44px 44px,#00071d 45px 45px,#00071d 46px 46px,#00071d 47px 47px,#00071d 48px 48px,#00071d 49px 49px,#00071d 50px 50px,#00071d 51px 51px,#00071d 52px 52px,#00071d 53px 53px,#00071d 54px 54px,
-    #00071d 55px 55px;*/
-}
-.last-name{
-    line-height: 16vh;
+    text-shadow: #00071d 1px 1px,#00071d 2px 2px,#00071d 3px 3px,#00071d 4px 4px,#00071d 5px 5px,#00071d 6px 6px,#00071d 7px 7px,#00071d 8px 8px,#00071d 9px 9px,#00071d 10px 10px,#00071d 11px 11px,#00071d 12px 12px,#00071d 13px 13px,#00071d 14px 14px,#00071d 15px 15px,#00071d 16px 16px,#00071d 17px 17px,#00071d 18px 18px,#00071d 19px 19px,#00071d 20px 20px,#00071d 21px 21px,#00071d 22px 22px,#00071d 23px 23px,#00071d 24px 24px,#00071d 25px 25px;
 }
 .text-white{
     color: #fff;
@@ -101,23 +96,22 @@
     background: rgb(255, 102, 0);
     color: #ffff;
 }
-.box1{
+.box1, .box2{
     position: absolute;
+    background: #efefef;
+    border: 2px solid #262626;
+}
+.box1{
     width: 15px;
     height: 109%;
-    border: 2px solid #262626;
-    background: #efefef;
     top: 6px;
     left: -16px;
     transform: skewY(-45deg);
     z-index: 1;
 }
 .box2{
-    position: absolute;
     width: 108%;
     height: 40%;
-    border: 2px solid #262626;
-    background: #efefef;
     bottom: -18px;
     right: 0px;
     transform: skewY(-180deg);
@@ -141,7 +135,7 @@
     width: 40%;
     left: 10%;
 }
-.text{
+.text, .span{
     font-family: 'Electrolize', sans-serif;
     line-height: 1.6rem;
 }
@@ -155,13 +149,11 @@
 .span{
     position: absolute;
     bottom: 2rem;
-    font-family: 'Electrolize', sans-serif;
     font-size: 1.7em;
     text-shadow: #00071d 1px 1px;
-    
 }
 .span::before{
-    content: 'Atenta';
+    content: '';
     animation: animate infinite 10s;
 }
 @keyframes animate{
@@ -200,7 +192,6 @@
         border-radius: 5vh;
         border:2px outset gainsboro;
     }
-
 }
 /* foto */
 .box{
@@ -252,48 +243,72 @@
 }
 .tex-div3{
     position: absolute;
-    top: 5rem;
+    top: 2rem;
     left: 0;
     right: 0;
     margin: auto;
     width: 30%;
 }
 /* habilidades tech */
-.character{
-    position: absolute;
-    bottom: 7%;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.skills-code, .skills-ux{
-    padding: 0.6em 0.8em;
-    border-radius: 3vh;
+.skill-box{
     display: inline-block;
-    margin: 0.5em ;
-    border: 2px outset gainsboro;
-    font-family: 'Electrolize', sans-serif;
-    font-weight: 400;
-    color: whitesmoke;
-    left: 0;
-    right: 0;
+    position: relative;
+    width: 40%;
+    padding: 50px;
+    left: 6%;
+    top: 7vh;
+    right: 7vh;
+    margin-right: 3rem;
+    color: gainsboro;
 }
-.skills-code{
-    background-color: orangered;
+.skill-box2{
+    position: relative;
+    width: 600px;
+    padding: 50px;
+    left: 7vh;
+    bottom: 19.5vh;
+    color: gainsboro;
+    display: inline-block;
+    padding-top: 0vh;
 }
-.skills-ux{
-    background-color: purple;
+.bar-progress{
+    width: 100%;
+    height: 1.3rem;
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+    line-height: 1em;
+    overflow: hidden;
 }
-.code-list{
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 30%;
+.bar-progress, .percent{
+    text-align: right;
+    padding-right: 10px;
+    border-right: 2px solid gainsboro;
 }
-.ux-list{
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    width: 25%;
+.percent{
+    animation: animate .5s linear infinite;
+    background: linear-gradient(45deg, rgba(255, 255, 255, .25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .25)50%, rgba(255, 255, 255, .25)75%, transparent 75%,transparent);
+    background-size: 30px 30px;
 }
-
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 30px 0;
+    }
+}
+.percent1{
+    width: 95%;
+}
+.percent2{
+    width: 90%;
+}
+.percent3{
+    width: 70%;
+}
+.percent4{
+    width: 60%;
+}
+.text-size-skills{
+    font-size: 1em;
+}
