@@ -154,9 +154,9 @@
 }
 .span::before{
     content: '';
-    animation: animate infinite 10s;
+    animation: animated infinite 10s;
 }
-@keyframes animate{
+@keyframes animated{
     0%{
         content: 'Determinada';
         background-color: rgb(128, 0, 167);
