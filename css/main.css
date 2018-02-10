@@ -216,8 +216,8 @@
     border-radius: 5vh;
 }
 .box .front, .box .back{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -243,3 +243,57 @@
     transform: perspective(1000px) rotateY(0deg);
     z-index: 1;
 }
+/* sección habilidades */
+.background-habilities{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #090c15;
+}
+.tex-div3{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+}
+/* habilidades tech */
+.character{
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.skills-code, .skills-ux{
+    padding: 0.6em 0.8em;
+    border-radius: 3vh;
+    display: inline-block;
+    margin: 0.5em ;
+    border: 2px outset gainsboro;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+    left: 0;
+    right: 0;
+}
+.skills-code{
+    background-color: orangered;
+}
+.skills-ux{
+    background-color: purple;
+}
+.code-list{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 30%;
+}
+.ux-list{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 25%;
+}
+
