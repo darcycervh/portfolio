@@ -1,329 +1,45 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.menu-trigger-span{
-    color: gainsboro;
-    background-color: rgb(161, 13, 124);
-    border: 0.2em solid gainsboro;
-    border-radius: 50%;
-    float: right;
-    padding: 1.2rem;
-    margin-top: 0.8rem;
-    margin-right: 0.8rem;
+/* Fuentes de tipografías:
+texto normal: Electrolize,
+título: Press Start 2P,
+texto: Open Sans
+*/
+/* Imagen de fondo para el body */
+.background-image{
+  background-image: url(../assets/images/comando.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
-.image-background{
-    background-image: url(../assets/images/comando.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+/* Caja que contiene texto de la presentación */
+.div-center{
+  outline: 2px solid yellow;
+  width: 65%;
+  height: 35%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-/* div header */
-.div-header{
-    margin: auto;
-    height: 25vh;
-    width: 70%;
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-}
-/* text */
-.text-p{
-    font-family: 'Electrolize', sans-serif;
-    font-size: 2em;
-    text-shadow: 2px 2px #00071d;
-}
-.text-header{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 4.5em;
-    font-weight: bold;
-    text-shadow: #00071d 1px 1px,#00071d 2px 2px,#00071d 3px 3px,#00071d 4px 4px,#00071d 5px 5px,#00071d 6px 6px,#00071d 7px 7px,#00071d 8px 8px,#00071d 9px 9px,#00071d 10px 10px,#00071d 11px 11px,#00071d 12px 12px,#00071d 13px 13px,#00071d 14px 14px,#00071d 15px 15px,#00071d 16px 16px,#00071d 17px 17px,#00071d 18px 18px,#00071d 19px 19px,#00071d 20px 20px,#00071d 21px 21px,#00071d 22px 22px,#00071d 23px 23px,#00071d 24px 24px,#00071d 25px 25px;
-}
-.text-white{
-    color: #fff;
-}
-/* button tipo game */
-.center{
-    position: absolute;
-    bottom: 10%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
-.center2{
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.center3{
-    position: absolute;
-    bottom: 10%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-}
-.text-btn{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1em !important;
-}
-.center a{
-    display: inherit;
-    width: 180px;
-    height: 50px;
-    color: #262626;
-    font-size: 20px;
-    background: #ffff;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid #262626;
-    transition: .5s;
-    transform: skew(15deg);
-}
-.center a:hover{
-    background: rgb(24, 134, 197);
-    color: #ffff;
-}
-.center2 a:hover{
-    background: rgb(197, 24, 125);
-    color: #ffff;
-}
-.center3 a:hover{
-    background: rgb(255, 102, 0);
-    color: #ffff;
-}
-.box1, .box2{
-    position: absolute;
-    background: #efefef;
-    border: 2px solid #262626;
-}
-.box1{
-    width: 15px;
-    height: 109%;
-    top: 6px;
-    left: -16px;
-    transform: skewY(-45deg);
-    z-index: 1;
-}
-.box2{
-    width: 108%;
-    height: 40%;
-    bottom: -18px;
-    right: 0px;
-    transform: skewY(-180deg);
-}
-/* section: about me */
-.background-deepink{
-    background:linear-gradient(#fd0ccd,#921a3e, #530b57, #22072a, #090c15);
-    position: relative;
-    width: 100%;
-    height: 100vh;
+.text{
+  font-family: 'Electrolize', sans-serif;
+  font-size: 1.5em;
 }
 .text-title{
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 0;
-    font-size: 2.3em;
-    line-height: 2em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4em;
 }
-.text-div2{
-    position: relative;
-    top: 15%;
-    width: 40%;
-    left: 10%;
+.text-subtitle{
+  font-family: 'Electrolize', sans-serif;
+  font-size: 2em;
 }
-.text, .span{
-    font-family: 'Electrolize', sans-serif;
-    line-height: 1.6rem;
-}
-.gif-plant{
-    padding-top: 2rem;
-    height: 20vh;
-    width: 18vh;
-    margin-right: 3rem;
-    margin-left: 4rem;
-}
-.span{
-    position: absolute;
-    bottom: 2rem;
-    font-size: 1.7em;
-    text-shadow: #00071d 1px 1px;
-}
-.span::before{
-    content: '';
-    animation: animated infinite 10s;
-}
-@keyframes animated{
-    0%{
-        content: 'Determinada';
-        background-color: rgb(128, 0, 167);
-        padding: 0.2em 0.8em;
-        border-radius: 5vh;
-        border:2px outset gainsboro;
-    }
-    25%{
-        content: 'Responsable';
-        background-color: rgb(167, 0, 78);
-        padding: 0.2em 0.8em;
-        border-radius: 5vh;
-        border:2px outset gainsboro;
-    }
-    50%{
-        content: 'Empática';
-        background-color: rgb(167, 47, 0);
-        padding: 0.2em 0.8em;
-        border-radius: 5vh;
-        border:2px outset gainsboro;
-    }
-    75%{
-        content: 'Honesta';
-        background-color: rgb(0, 167, 22);
-        padding: 0.2em 0.8em;
-        border-radius: 5vh;
-        border:2px outset gainsboro;
-    }
-    100%{
-        content: 'Apasionada';
-        background-color: rgb(167, 0, 36);
-        padding: 0.2em 0.8em;
-        border-radius: 5vh;
-        border:2px outset gainsboro;
-    }
-}
-/* foto */
-.box{
-    position: absolute;
-    top: 40%;
-    right: 7%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 200px;
-}
-.box img{
-    width: 100%;
-    border-radius: 5vh;
-}
-.box .front, .box .back{
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 2s;
-    backface-visibility: hidden;
-    border: 3px outset gainsboro;
-    border-radius: 5vh;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-.box .front{
-    transform: perspective(1000px) rotateY(0deg);
-    z-index: 2;
-}
-.box .back{
-    transform: perspective(1000px) rotateY(180deg);
-    z-index: 1;
-}
-.box:hover .front{
-    transform: perspective(1000px) rotateY(-180deg);
-    z-index: 2;
-}
-.box:hover .back{
-    transform: perspective(1000px) rotateY(0deg);
-    z-index: 1;
-}
-/* sección habilidades */
-.background-habilities{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #090c15;
-}
-.tex-div3{
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 30%;
-}
-/* habilidades tech */
-.skill-box{
-    display: inline-block;
-    position: relative;
-    width: 40%;
-    padding: 50px;
-    left: 6%;
-    top: 7vh;
-    right: 7vh;
-    margin-right: 3rem;
-    color: gainsboro;
-}
-.skill-box2{
-    position: relative;
-    width: 600px;
-    padding: 50px;
-    left: 7vh;
-    bottom: 19.5vh;
-    color: gainsboro;
-    display: inline-block;
-    padding-top: 0vh;
-}
-.bar-progress{
-    width: 100%;
-    height: 1.3rem;
-    border-radius: 10px;
-    border: 2px solid gainsboro;
-    line-height: 1em;
-    overflow: hidden;
-}
-.bar-progress, .percent{
-    text-align: right;
-    padding-right: 10px;
-    border-right: 2px solid gainsboro;
-}
-.percent{
-    animation: animate .5s linear infinite;
-    background: linear-gradient(45deg, rgba(255, 255, 255, .25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .25)50%, rgba(255, 255, 255, .25)75%, transparent 75%,transparent);
-    background-size: 30px 30px;
-}
-@keyframes animate{
-    0%{
-        background-position: 0 0;
-    }
-    100%{
-        background-position: 30px 0;
-    }
-}
-.percent1{
-    width: 95%;
-}
-.percent2{
-    width: 90%;
-}
-.percent3{
-    width: 70%;
-}
-.percent4{
-    width: 60%;
-}
-.text-size-skills{
-    font-size: 1em;
-}
-/* sección: proyects */
-.background-proyects{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(#090c15,#000103);
-}
-.text-projects{
-    color: #fff;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 7%;
-    width: 25%;
-    position: relative;
+.span-start-game{
+  left: 0;
+  right: 0;
 }
