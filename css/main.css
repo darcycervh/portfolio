@@ -19,9 +19,8 @@ texto: Open Sans
 }
 /* Caja que contiene texto de la presentación */
 .div-center{
-  outline: 2px solid yellow;
   width: 65%;
-  height: 35%;
+  height: 45%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -34,12 +33,80 @@ texto: Open Sans
 .text-title{
   font-family: 'Press Start 2P', cursive;
   font-size: 4em;
+  text-shadow: #00071d 1px 1px,#00071d 2px 2px,#00071d 3px 3px,#00071d 4px 4px,#00071d 5px 5px,#00071d 6px 6px,#00071d 7px 7px,#00071d 8px 8px,#00071d 9px 9px,#00071d 10px 10px,#00071d 11px 11px,#00071d 12px 12px,#00071d 13px 13px,#00071d 14px 14px,#00071d 15px 15px,#00071d 16px 16px,#00071d 17px 17px,#00071d 18px 18px,#00071d 19px 19px,#00071d 20px 20px,#00071d 21px 21px;  
 }
 .text-subtitle{
   font-family: 'Electrolize', sans-serif;
   font-size: 2em;
+  text-shadow: #00071d 1px 1px
 }
-.span-start-game{
-  left: 0;
-  right: 0;
+/*  button tipo game  */
+.center{
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.center2{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center3{
+  position: absolute;
+  bottom: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.text-btn{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em !important;
+}
+.center a{
+  display: inherit;
+  width: 180px;
+  height: 50px;
+  color: #262626;
+  font-size: 20px;
+  background: #ffff;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #262626;
+  transition: .5s;
+  transform: skew(15deg);
+}
+.center a:hover{
+  background: rgb(24, 134, 197);
+  color: #ffff;
+}
+.center2 a:hover{
+  background: rgb(197, 24, 125);
+  color: #ffff;
+}
+.center3 a:hover{
+  background: rgb(255, 102, 0);
+  color: #ffff;
+}
+.box1, .box2{
+  position: absolute;
+  background: #efefef;
+  border: 2px solid #262626;
+}
+.box1{
+  width: 15px;
+  height: 109%;
+  top: 6px;
+  left: -16px;
+  transform: skewY(-45deg);
+  z-index: 1;
+}
+.box2{
+  width: 108%;
+  height: 40%;
+  bottom: -18px;
+  right: 0px;
+  transform: skewY(-180deg);
 }

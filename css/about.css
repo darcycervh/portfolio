@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.div-personaje{
+  height: 70%;
+  width: 30%;
+  top: 16%;
+  left: 7%;
+  background: radial-gradient(#530B57, #22072A);
+  border: 5px solid #921A3E;
+  border-radius: 5vh;
+}
