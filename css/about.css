@@ -12,3 +12,50 @@
   border: 5px solid #921A3E;
   border-radius: 5vh;
 }
+.group-habilities{
+  position: absolute;
+  top: 23%;
+  left: 28%;
+}
+.box-ux-research{
+  background-color: #C4C4C4;
+}
+.box-design-thinking{
+  background-color: #B55757;
+}
+.image-size, .box-ux-research, .box-design-thinking{
+  width: 12vh;
+  height: 12vh;
+  border-radius: 2vh;
+}
+.figma{
+  width: 13.5vh;
+  height: 13.5vh;
+  margin-left: -1vh;
+}
+.magnifier, .light{
+  width: 6vh;
+  height: 7vh;
+  left: 0;
+  right: 0;
+}
+.text-habilities{
+  line-height: 0.9em;
+  font-size: 0.9em;
+  font-family: 'Electrolize', sans-serif;
+  padding-top: 7.3vh;
+}
+/* Descripción acerca de mí */
+.div-description{
+  top: 25%;
+  left: 40%;
+  width: 45%;
+}
+.title-about-me{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.2em;
+}
+.description-about-me{
+  font-family: 'Electrolize', sans-serif;
+  font-size: 1.1em;
+}
