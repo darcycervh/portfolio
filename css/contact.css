@@ -3,3 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+/**/
+.div-contact-me{
+  top: 20%;
+  left: 0;
+  right: 0;
+  width: 30%;
+}
+.text-title-contact{
+  font-family: 'Press Start 2P', cursive;
+}
+.text-contact{
+  font-family: 'Electrolize', sans-serif;
+}
+.div-box-info{
+  background-color: rgba(253, 12, 205, .3);
+  top: 40%;
+  width: 35%;
+  left: 0;
+  right: 0;
+}
+.btn-download-cv{
+  background-color: #FF3639;
+  border: 2px solid #EB5757;
+  width: 40%;
+  height: 6vh;
+  border-radius: 1vh;
+  box-sizing: border-box;
+}
+.text-color{
+  color: #22072A;
+}

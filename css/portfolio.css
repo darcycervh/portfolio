@@ -3,3 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+.card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  background-color: yellow;
+}
+.card .front{
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: .5s;
+  transform-origin: right;
+}
+.more{
+  width: 50%;
+  text-align: right;
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  color: rgb(129, 2, 2);
+  display: block;
+}
+.card .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 30px;
+  background-color: #ff2877;
+  box-sizing: border-box;
+  transform-origin: left;
+  transition: .5s;
+  transform: translateX(100%) rotateY(90deg);
+}
+.card .back .active{
+  transform: translate(0) rotate(0deg);
+}
+.card .front .active{
+  transform: translateX(0) rotateY(0deg);
+}
+.card .front {
+  transform: translateX(-100%) rotateY(90deg);
+}
+.card .front .active .go-back{
+  font-size: 24px
+}

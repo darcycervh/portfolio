@@ -37,17 +37,32 @@
   top: 1.5rem;
   left: 5.5rem;
 }
+.btn-box1:focus, .btn-box2:focus, .btn-box3:focus{
+  outline: none;
+}
 .btn-box1{
   background-color: #1886C5;
   border: none;
+  cursor: pointer;
+}
+.btn-box1:hover, .btn-box1:active{
+  background-color: #002A42;
 }
 .btn-box2{
   left: 18rem;
   background-color: #C5187D;
   border: none;
+  cursor: pointer;
+}
+.btn-box2:hover, .btn-box2:active{
+  background-color: #7D0149;
 }
 .btn-box3{
   left: 28.7rem;
   background-color: #FF6600;
   border: none;
+  cursor: pointer;
+}
+.btn-box3:hover, .btn-box3:active{
+  background-color: #5E2702;
 }
