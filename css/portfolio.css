@@ -3,54 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
-.card{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 400px;
-  background-color: yellow;
+.bg-forest{
+  background: url(../assets/images/BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.card .front{
-  width: 100%;
-  height: 100%;
-  background: #2196f3;
-  padding: 30px;
-  box-sizing: border-box;
-  transition: .5s;
-  transform-origin: right;
+.forest{
+  top: 42.6%;
+  width: 92.8%;
+  height: 50vh;
+  left: 3.6%;
+  border-radius: 4vh;
 }
-.more{
-  width: 50%;
-  text-align: right;
+.as-cloud{
+  top: 33%;
+  left: 15%;
+  width: 12%;
+}
+.box-game{
+  width: 15vh;
+  height: 15vh;
   cursor: pointer;
-  float: right;
-  font-size: 24px;
-  color: rgb(129, 2, 2);
-  display: block;
 }
-.card .back{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 30px;
-  background-color: #ff2877;
-  box-sizing: border-box;
-  transform-origin: left;
-  transition: .5s;
-  transform: translateX(100%) rotateY(90deg);
+.banmill{
+  top: 17.9%;
+  left: 17.5%;
 }
-.card .back .active{
-  transform: translate(0) rotate(0deg);
+.banmill:hover{
+  outline: 9px solid yellow;
 }
-.card .front .active{
-  transform: translateX(0) rotateY(0deg);
+.teleticket{
+  top: 60.8%;
+  left: 40%;
 }
-.card .front {
-  transform: translateX(-100%) rotateY(90deg);
+.teleticket:hover{
+  outline: 9px solid magenta;
 }
-.card .front .active .go-back{
-  font-size: 24px
+.lyft{
+  top: 44.2%;
+  left: 62%;
 }
+.lyft:hover{
+  outline: 9px solid maroon;
+}/*
+.box4{
+  top: 27.5%;
+  left: 50%;
+}
+.box4:hover{
+  outline: 9px solid springgreen;
+}*/
