@@ -12,10 +12,29 @@
   border: 5px solid #921A3E;
   border-radius: 5vh;
 }
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: calc(1536px / 6);
+  height: 256px;
+  background: url(../assets/images/sprite.png);
+  animation: animate 5s steps(6) infinite;
+}
+@keyframes animate{
+  from{
+    background-position: 0;
+  }
+  to{
+    background-position: 1536px;
+  }
+}
 .group-habilities{
   position: absolute;
-  top: 23%;
-  left: 28%;
+  top: 12%;
+  left: 73%;
 }
 .box-ux-research{
   background-color: #C4C4C4;
