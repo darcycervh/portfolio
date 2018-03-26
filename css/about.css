@@ -12,7 +12,9 @@
   border: 5px solid #921A3E;
   border-radius: 5vh;
 }
-
+.text-title-habilities{
+  margin-left: -0.8em;
+}
 .box{
   position: absolute;
   top: 50%;
@@ -33,7 +35,7 @@
 }
 .group-habilities{
   position: absolute;
-  top: 12%;
+  top: 8%;
   left: 73%;
 }
 .box-ux-research{
@@ -43,8 +45,8 @@
   background-color: #B55757;
 }
 .image-size, .box-ux-research, .box-design-thinking{
-  width: 12vh;
-  height: 12vh;
+  width: 11vh;
+  height: 11vh;
   border-radius: 2vh;
 }
 .figma{
@@ -54,15 +56,15 @@
 }
 .magnifier, .light{
   width: 6vh;
-  height: 7vh;
-  left: 0;
+  height: 6vh;
+  left: -1.6em;
   right: 0;
 }
 .text-habilities{
   line-height: 0.9em;
   font-size: 0.9em;
   font-family: 'Electrolize', sans-serif;
-  padding-top: 7.3vh;
+  padding-top: 6.3vh;
 }
 /* Descripción acerca de mí */
 .div-description{

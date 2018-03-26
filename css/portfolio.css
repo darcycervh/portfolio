@@ -31,21 +31,75 @@
   left: 17.5%;
 }
 .banmill:hover{
-  outline: 9px solid yellow;
+  outline: 13px solid yellow;
+  animation: outline-animation-1 infinite 1s;
+}
+@keyframes outline-animation-1 {
+  0%{
+    outline: 13px solid #0f1e3f;
+  }
+  25%{
+    outline: 13px solid #013069;
+  }
+  50%{
+    outline: 13px solid #0063c5;
+  }
+  75%{
+    outline: 13px solid #459cef;
+  }
+  100%{
+    outline: 13px solid #88ccf7;
+  }
 }
 .teleticket{
   top: 60.8%;
   left: 40%;
 }
 .teleticket:hover{
-  outline: 9px solid magenta;
+  outline: 13px solid magenta;
+  animation: outline-animation-2 infinite 1s;
+}
+@keyframes outline-animation-2 {
+  0%{
+    outline: 13px solid #3d0009;
+  }
+  25%{
+    outline: 13px solid #760b13;
+  }
+  50%{
+    outline: 13px solid #d90e0f;
+  }
+  75%{
+    outline: 13px solid #f65e1d;
+  }
+  100%{
+    outline: 13px solid #f6c114;
+  }
 }
 .lyft{
   top: 44.2%;
   left: 62%;
 }
 .lyft:hover{
-  outline: 9px solid maroon;
+  outline: 13px solid maroon;
+  animation: outline-animation-3 infinite 1s;
+}
+@keyframes outline-animation-3 {
+  0%{
+    outline: 13px solid #ef018d;
+  }
+  25%{
+    outline: 13px solid #a22768;
+  }
+  50%{
+    outline: 13px solid #dc4aa8;
+  }
+  75%{
+    outline: 13px solid #d789c1;
+  }
+  100%{
+    outline: 13px solid #e8bae3;
+  }
 }/*
 .box4{
   top: 27.5%;

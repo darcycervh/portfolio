@@ -40,6 +40,20 @@ texto: Open Sans
   font-size: 2em;
   text-shadow: #00071d 1px 1px
 }
+/***/
+#span-start-portfolio{
+  animation: span infinite 2s;
+}
+@keyframes span{
+  30%{
+    background-color:rgb(255, 153, 70);
+  }
+  90%{
+    content: 'Para comenzar, haz click en uno de los botones';
+    background-color: rgb(239, 115, 255);
+  }
+}
+
 /*  button tipo game  */
 .center{
   position: absolute;
