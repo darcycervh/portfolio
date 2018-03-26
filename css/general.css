@@ -66,3 +66,32 @@
 .btn-box3:hover, .btn-box3:active{
   background-color: #5E2702;
 }
+@media (max-width:693px){
+  .btn-box{
+    font-size: 0.7em !important;
+  }
+  .btn-box1{
+    left: 2.9rem;
+  }
+  .btn-box2{
+    left: 13.6rem;
+  }
+  .btn-box3{
+    left: 22.8rem;
+  }
+}
+@media (max-width:360px) {
+  .btn-box{
+    font-size: 0.4em !important;
+    padding: 1em !important;
+  }
+  .btn-box1{
+    left: 1.7rem;
+  }
+  .btn-box2{
+    left: 7.8rem;
+  }
+  .btn-box3{
+    left: 13rem;
+  }
+}

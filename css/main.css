@@ -58,13 +58,13 @@ texto: Open Sans
 .center{
   position: absolute;
   bottom: 10%;
-  left: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .center2{
   position: absolute;
   bottom: 10%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 .center3{
@@ -72,6 +72,13 @@ texto: Open Sans
   bottom: 10%;
   left: 70%;
   transform: translate(-50%, -50%);
+}
+.center4{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 .text-btn{
   font-family: 'Press Start 2P', cursive;
@@ -123,4 +130,29 @@ texto: Open Sans
   bottom: -18px;
   right: 0px;
   transform: skewY(-180deg);
+}
+/*haciendolo mobile friendly*/
+@media (max-width: 1278px){
+  .span-start{
+    display: none;
+  }
+  .text-subtitle{
+    font-size: 1.5em;
+  }
+  .text-title{
+    font-size: 3.6em;
+  }
+}
+@media (max-width: 1143px){
+  .center2, .center3{
+    display: none;
+  }
+  .center4{
+    display: block;
+  }
+}
+@media (max-width: 1102px) {
+  .text-title{
+    font-size: 3.3em;
+  }
 }

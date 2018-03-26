@@ -81,6 +81,9 @@
   left: 62%;
   z-index: 10;
 }
+.lyft-box{
+  background: url(../assets/images/lyft.png);
+}
 .lyft:hover{
   outline: 13px solid maroon;
   animation: outline-animation-3 infinite 1s;
@@ -123,4 +126,9 @@
 }
 .text-portfolio{
   font-size: 0.7em;
+}
+@media (max-width:400px){
+  .forest, .as-cloud{
+    display: none;
+  }
 }

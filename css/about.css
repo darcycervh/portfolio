@@ -80,3 +80,44 @@
   font-family: 'Electrolize', sans-serif;
   font-size: 1.1em;
 }
+@media (max-width: 1170px){
+  .title-about-me{
+    font-size: 1.7em;
+  }
+  .description-about-me{
+    font-size: 1em;
+  }
+  .div-personaje{
+    width: 25%;
+  }
+  .group-habilities{
+    left: 41%;
+  }
+  .box{
+    display: none;
+  }
+}
+@media (max-width:839px) {
+  .div-personaje{
+    display: none;
+  }  
+  .group-habilities{
+    display: none;
+  }
+  .description-about-me{
+    font-size: 0.9em;
+  }
+  .div-description{
+    left: 25%;
+    text-align: center;
+  }
+}
+@media (max-width:560px){
+  .description-about-me{
+    font-size: 0.7em;
+  }
+  .title-about-me{
+    font-size: 1.5em;
+    line-height: 1.8em;
+  }
+}
