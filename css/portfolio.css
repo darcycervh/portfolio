@@ -54,3 +54,18 @@
 .box4:hover{
   outline: 9px solid springgreen;
 }*/
+/**/
+.btn-project{
+  background-color: #732369;
+  outline: 0px;
+  border: none;
+  font-size: 1.2em;
+}
+.btn-demo{
+  background-color: #7d4c8c;
+  outline: 0px;
+  font-size: 1.2em;
+}
+.text-portfolio{
+  font-size: 1.2em;
+}
