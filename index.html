@@ -14,32 +14,48 @@
 </head>
 <body class="background-image">
   <!-- presentación del portafolio -->
-  <div class="div-center m-auto position-absolute">
-    <p class="text text-white">Hola, mi nombre es</p>
-    <h1 class="text-title text-white">Darcy Cervera</h1>
-    <p class="text-subtitle text-white text-center mt-4">y soy UX Designer</p>
-    <div class="d-flex justify-content-center align-center span-start">
-      <span class="bg-warning p-1 pl-2 pr-2 rounded mt-4 span-start" id="span-start-portfolio">
-        Para comenzar, haz click en uno de los botones
-      </span>
+  <div class="container position-absolute div-center">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-sm-12">
+        <p class="text text-white text-center">Hola, mi nombre es</p>
+        <h1 class="text-title text-white text-center">Darcy Cervera</h1>
+        <p class="text-subtitle text-white text-center mt-4 pt-3">y soy UX Designer</p>
+        <div class="d-flex justify-content-center align-center span-start">
+          <span class="d-none d-md-block bg-warning p-1 pl-2 pr-2 rounded mt-4 span-start" id="span-start-portfolio">
+          Para comenzar, haz click en uno de los botones
+          </span>
+        </div>
+      </div>
     </div>
   </div>
   <!-- grupo de botones -->
-  <div class="center center2">
-    <a href="../portfolio/views/about.html" class="text-btn" id="portfolio">
-      <span class="box1"></span><span class="box2"></span>Acerca de mí</a>
-  </div>
-  <div class="center">
-    <a href="../portfolio/views/portfolio.html" class="text-btn text-btn2" id="about">
-      <span class="box1"></span><span class="box2"></span>Portafolio</a>
-  </div>
-  <div class="center center4">
-    <a href="../portfolio/views/about.html" class="text-btn text-btn2" id="about">
-      <span class="box1"></span><span class="box2"></span>Comenzar</a>
-  </div>
-  <div class="center center3">
-    <a href="../portfolio/views/contact.html" class="text-btn" id="contact">
-      <span class="box1"></span><span class="box2"></span>Contáctame</a>
+  <div class="container">
+    <div class="row">
+      <div class="d-none d-md-block ">
+        <div class="center center2">
+          <a href="../portfolio/views/about.html" class="text-btn" id="portfolio">
+          <span class="box1"></span><span class="box2"></span>Acerca de mí</a>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="center">
+          <a href="../portfolio/views/portfolio.html" class="text-btn text-btn2" id="about">
+            <span class="box1"></span><span class="box2"></span>Portafolio</a>
+        </div>
+      </div>
+      <div class="d-xs-block d-md-none">
+        <div class="center center4">
+          <a href="../portfolio/views/about.html" class="text-btn text-btn2" id="about">
+            <span class="box1"></span><span class="box2"></span>Comenzar</a>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="center center3">
+          <a href="../portfolio/views/contact.html" class="text-btn" id="contact">
+            <span class="box1"></span><span class="box2"></span>Contáctame</a>
+        </div>
+      </div>  
+    </div>
   </div>
   <!-- jQuery minificado -->
   <script

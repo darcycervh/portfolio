@@ -12,32 +12,34 @@ texto: Open Sans
 .background-image{
   background-image: url(../assets/images/comando.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-position: center;
-  width: 100%;
+  background-size: 100% 100%;
+  width: auto;
   height: 100vh;
 }
 /* Caja que contiene texto de la presentación */
 .div-center{
-  width: 65%;
+  width: 100%;
   height: 45%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .text{
   font-family: 'Electrolize', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+.text-xs{
+  font-size: 0.7em;
 }
 .text-title{
   font-family: 'Press Start 2P', cursive;
-  font-size: 4em;
+  font-size: 2em;
   text-shadow: #00071d 1px 1px,#00071d 2px 2px,#00071d 3px 3px,#00071d 4px 4px,#00071d 5px 5px,#00071d 6px 6px,#00071d 7px 7px,#00071d 8px 8px,#00071d 9px 9px,#00071d 10px 10px,#00071d 11px 11px,#00071d 12px 12px,#00071d 13px 13px,#00071d 14px 14px,#00071d 15px 15px,#00071d 16px 16px,#00071d 17px 17px,#00071d 18px 18px,#00071d 19px 19px,#00071d 20px 20px,#00071d 21px 21px;  
 }
 .text-subtitle{
   font-family: 'Electrolize', sans-serif;
-  font-size: 2em;
+  font-size: 1.3em;
   text-shadow: #00071d 1px 1px
 }
 /***/
@@ -78,7 +80,6 @@ texto: Open Sans
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
 }
 .text-btn{
   font-family: 'Press Start 2P', cursive;
@@ -132,27 +133,36 @@ texto: Open Sans
   transform: skewY(-180deg);
 }
 /*haciendolo mobile friendly*/
-@media (max-width: 1278px){
-  .span-start{
-    display: none;
+@media (min-width:650px){
+  .text{
+    font-size: 1.2em;
+  }
+  .text-title{
+    font-size: 2.3em;
+  }
+  .text-subtitle{
+    font-size: 1.3em;
+  }
+}
+@media (min-width:1036px){
+  .text{
+    font-size: 1.3em;
+  }
+  .text-title{
+    font-size: 3em;
   }
   .text-subtitle{
     font-size: 1.5em;
   }
-  .text-title{
-    font-size: 3.6em;
-  }
 }
-@media (max-width: 1143px){
-  .center2, .center3{
-    display: none;
+@media (min-width:1248px){
+  .text{
+    font-size: 1.5em;
   }
-  .center4{
-    display: block;
-  }
-}
-@media (max-width: 1102px) {
   .text-title{
-    font-size: 3.3em;
+    font-size: 3.5em;
+  }
+  .text-subtitle{
+    font-size: 1.9em;
   }
 }
