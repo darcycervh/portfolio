@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.forest{
+.forest-xs, .forest-sm, .forest{
   top: 42.6%;
   width: 92.8%;
   height: 50vh;
@@ -27,8 +27,8 @@
   cursor: pointer;
 }
 .banmill{
-  top: 17.9%;
-  left: 17.5%;
+  top: 27.7%;
+  left: 40%;
 }
 .banmill:hover{
   outline: 13px solid yellow;
@@ -78,7 +78,7 @@
 }
 .lyft{
   top: 44.2%;
-  left: 62%;
+  left: 30%;
   z-index: 10;
 }
 .lyft-box{
@@ -127,8 +127,11 @@
 .text-portfolio{
   font-size: 0.7em;
 }
-@media (max-width:400px){
-  .forest, .as-cloud{
-    display: none;
+@media (min-width:576px){
+  .banmill{
+    left: 48%;
+  }
+  .lyft{
+    left: 60%;
   }
 }

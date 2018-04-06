@@ -15,25 +15,67 @@
   <link rel="stylesheet" href="../css/general.css">
   <!-- carpeta portfolio css -->
   <link rel="stylesheet" href="../css/portfolio.css">
+  <!-- -->
+  <link rel="stylesheet" href="../css/about.css">
 </head>
 <body class="background-image">
   <div class="div-rgba"></div>
   <div class="div-box1"></div>
   <div class="div-box2 bg-forest"></div>
-  <!-- botones para la navegación -->
-  <button id="about"  class="text-btn position-absolute btn-box btn-box1 p-2 pl-3 pr-3 rounded text-uppercase text-white">
-    acerca de mí
-  </button>
-  <button id="portfolio"  class="text-btn position-absolute btn-box btn-box2 p-2 pl-3 pr-3 rounded text-uppercase text-white">
-    portafolio
-  </button>
-  <button id="contact"  class="text-btn position-absolute btn-box btn-box3 p-2 pl-3 pr-3 rounded text-uppercase text-white">
-    contáctame
-  </button>
+  <!-- menú hamburguesa -->
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-9 position-absolute div-navbar d-sm-none">
+          <nav class="navbar navbar-light ">
+            <button class="navbar-toggler nav-bg border-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav bg-menu">
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase pl-3 bg-list1 bg-list" href="#">acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase pl-3 bg-list2 bg-list" href="#">portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase pl-3 bg-list3 bg-list" href="#">contáctame</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- botones para la navegación -->
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-sm-block">
+          <button id="about" class="text-btn position-absolute btn-box btn-box1 p-2 pl-3 pr-3 rounded text-uppercase text-white">
+            acerca de mí
+          </button>
+        </div>
+        <div class="d-none d-sm-block">
+          <button id="portfolio" class="text-btn position-absolute btn-box btn-box2 p-2 pl-3 pr-3 rounded text-uppercase text-white">
+            portafolio
+          </button>
+        </div>
+        <div class="d-none d-sm-block">
+          <button id="contact" class="text-btn position-absolute btn-box btn-box3 p-2 pl-3 pr-3 rounded text-uppercase text-white">
+            contáctame
+          </button>
+        </div>
+      </div>
+    </div>
   <!-- comienza presentación de los proyectos -->
   <div class="div-image-forest">
-    <img class="forest position-absolute" src="../assets/images/bosque.png" alt="">
-    <img class="as-cloud position-absolute" src="../assets/images/arriba.png" alt="">
+    <!-- vista xs -->
+    <img class="forest-xs position-absolute d-md-none" src="../assets/images/torre-cesped.png" alt="">
+    <!-- vista sm y md -->
+    <img class="d-none d-md-block d-lg-none forest-sm position-absolute" src="../assets/images/bosque-md.png" alt="">
+    <!-- vista lg y xl -->
+    <img class="d-none d-lg-block forest position-absolute" src="../assets/images/bosque.png" alt="">
+    <img class="d-none d-lg-block as-cloud position-absolute" src="../assets/images/arriba.png" alt="">
     <div class="box-banmill">
       <img class="banmill box-game position-absolute" src="../assets/images/banmill.png" alt="" data-toggle="modal" data-target=".bd-example-modal-lg">
       <!-- Modal de la caja banmill -->
