@@ -3,10 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+.div-navbar{
+  top: 0;
+}
+.nav-bg{
+  background-color: #004E9F;
+  color: #ffffff;
+}
+.bg-menu{
+  background-color: rgb(235, 235, 235);
+  box-sizing: border-box;
+  padding: 1rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7em;
+  border-radius: 2vh;
+  border: 2px outset gray;
+}
+.bg-list{
+  border-radius: 1vh;
+}
+.bg-list1:hover{
+  background-color: rgb(24, 134, 197);
+}
+.bg-list2:hover{
+  background-color: rgb(197, 24, 125);
+}
+.bg-list3:hover{
+  background-color: rgb(255, 102, 0);
+}
+.div-personaje-xs{
+  height: 17%;
+  top: 70%;
+  left: 10%;
+}
+.group-images{
+  margin-right: 15%;
+}
+.img-list{
+  width: 8vh;
+  height: 7vh;
+  margin-left: 0.4em;
+}
 .div-personaje{
-  height: 70%;
-  width: 30%;
-  top: 16%;
+  height: 17%;
+  width: 80%;
+  bottom: 5% !important;
   left: 7%;
   background: radial-gradient(#530B57, #22072A);
   border: 5px solid #921A3E;
@@ -17,12 +58,11 @@
 }
 .box{
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 40%;
   transform: translate(-50%, -50%);
-  width: calc(1536px / 6);
-  height: 256px;
-  background: url(../assets/images/sprite.png);
+  width: calc(560px / 6);
+  height: 94px;
+  background: url(../assets/images/sprite4.png);
   animation: animate 1s steps(6) infinite;
 }
 @keyframes animate{
@@ -30,13 +70,14 @@
     background-position: 0;
   }
   to{
-    background-position: 1536px;
+    background-position: 560px;
   }
 }
 .group-habilities{
   position: absolute;
   top: 8%;
   left: 73%;
+  width: 50%;
 }
 .box-ux-research{
   background-color: #C4C4C4;
@@ -45,13 +86,13 @@
   background-color: #B55757;
 }
 .image-size, .box-ux-research, .box-design-thinking{
-  width: 11vh;
-  height: 11vh;
+  width: 75%;
+  height: 75%;
   border-radius: 2vh;
 }
 .figma{
-  width: 13.5vh;
-  height: 13.5vh;
+  width: 75%;
+  height: 75%;
   margin-left: -1vh;
 }
 .magnifier, .light{
@@ -67,19 +108,19 @@
   padding-top: 6.3vh;
 }
 /* Descripción acerca de mí */
+
 .div-description{
-  top: 25%;
-  left: 40%;
-  width: 45%;
+  top: 14%;
+  left: 6%;
 }
 .title-about-me{
   font-family: 'Press Start 2P', cursive;
-  font-size: 2.2em;
+  font-size: 1.2em;
 }
 .description-about-me{
   font-family: 'Electrolize', sans-serif;
-  font-size: 1.1em;
-}
+  font-size: 0.8em;
+}/*
 @media (max-width: 1170px){
   .title-about-me{
     font-size: 1.7em;
@@ -120,4 +161,5 @@
     font-size: 1.5em;
     line-height: 1.8em;
   }
-}
+}*/
+/* menu hamburguesa */

@@ -13,4 +13,5 @@ $(document).ready(function(){
   $contact.on('click', function() {
     window.location.href = '../views/contact.html';
   });
+
 })

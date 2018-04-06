@@ -33,9 +33,13 @@
   bottom: 0;
   border-radius: 4vh;
 }
+.text-btn{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.4em !important;
+}
 .btn-box{
   top: 1.5rem;
-  left: 5.5rem;
+  left: 1.2rem;
 }
 .btn-box1:focus, .btn-box2:focus, .btn-box3:focus{
   outline: none;
@@ -49,7 +53,7 @@
   background-color: #002A42;
 }
 .btn-box2{
-  left: 18rem;
+  left: 8.27rem;
   background-color: #C5187D;
   border: none;
   cursor: pointer;
@@ -58,14 +62,14 @@
   background-color: #7D0149;
 }
 .btn-box3{
-  left: 28.7rem;
+  left: 14.5rem;
   background-color: #FF6600;
   border: none;
   cursor: pointer;
 }
 .btn-box3:hover, .btn-box3:active{
   background-color: #5E2702;
-}
+}/*
 @media (max-width:693px){
   .btn-box{
     font-size: 0.7em !important;
@@ -94,4 +98,4 @@
   .btn-box3{
     left: 13rem;
   }
-}
+}*/

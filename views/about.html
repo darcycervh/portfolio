@@ -20,52 +20,106 @@
   <div class="div-rgba"></div>
   <div class="div-box1"></div>
   <div class="div-box2"></div>
-  <!-- botones para la navegación -->
-  <button id="about" class="text-btn position-absolute btn-box btn-box1 p-2 pl-3 pr-3 rounded text-uppercase text-white">
-    acerca de mí
-  </button>
-  <button id="portfolio" class="text-btn position-absolute btn-box btn-box2 p-2 pl-3 pr-3 rounded text-uppercase text-white">
-    portafolio
-  </button>
-  <button id="contact" class="text-btn position-absolute btn-box btn-box3 p-2 pl-3 pr-3 rounded text-uppercase text-white">
-    contáctame
-  </button>
-  <!-- personaje y habilidades -->
-  <div class="div-personaje position-absolute">
-    <div class="personaje">
-      <div class="box"></div>
+  <!-- menú hamburguesa -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-9 position-absolute div-navbar d-sm-none">
+        <nav class="navbar navbar-light ">
+          <button class="navbar-toggler nav-bg border-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav bg-menu">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase pl-3 bg-list1 bg-list" href="#">acerca de mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase pl-3 bg-list2 bg-list" href="#">portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase pl-3 bg-list3 bg-list" href="#">contáctame</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    <div class="group-habilities">
-      <p class="text-white bg-warning p-1 pl-2 pr-2 rounded text-title-habilities">Habilidades</p>
-      <img src="../assets/images/marvelapp.png" alt="" class="image-size"><br>
-      <img src="../assets/images/figma.png" alt="" class="figma mt-2 mb-2"><br>
-      <div class="box-ux-research">
-        <img src="../assets/images/lupa.png" alt="" class="position-absolute m-auto pt-1 magnifier">
-        <p class="text-center text-habilities">ux-research</p>
-      </div><br>
-      <div class="box-design-thinking">
-        <img src="../assets/images/foco.png" alt="" class="position-absolute m-auto pt-1 light">
-        <p class="text-center text-habilities">design thinking</p>
+  </div>
+  <!-- botones para la navegación -->
+  <div class="container">
+    <div class="row">
+      <div class="d-none d-sm-block">
+        <button id="about" class="text-btn position-absolute btn-box btn-box1 p-2 pl-3 pr-3 rounded text-uppercase text-white">
+          acerca de mí
+        </button>
+      </div>
+      <div class="d-none d-sm-block">
+        <button id="portfolio" class="text-btn position-absolute btn-box btn-box2 p-2 pl-3 pr-3 rounded text-uppercase text-white">
+          portafolio
+        </button>
+      </div>
+      <div class="d-none d-sm-block">
+        <button id="contact" class="text-btn position-absolute btn-box btn-box3 p-2 pl-3 pr-3 rounded text-uppercase text-white">
+          contáctame
+        </button>
       </div>
     </div>
   </div>
   <!-- descripción acerca de mí -->
-  <div class="div-description position-absolute text-white">
-    <h3 class="title-about-me">Hola, soy Darcy</h3>
-    <br>
-    <p class="description-about-me">Mi pasión por la tecnología, el diseño y la investigación me dirigió hacia el campo de UX Design. Luego de tomar un curso de desarrollo front-end en Laboratoria, decidí tomar un curso intensivo de UX Design, especializándome en ese tema. Aquí, aprendí lo esencial que es involucrar al usuario desde el inicio hasta la última etapa del proceso, para así crear proyectos con alta aceptación. 
-    </p>
-    <p class="description-about-me">Además de mi pasión por UX, me gustan mucho los videojuegos, por lo que creé mi portafolio con esta temática. 
-      ¡Espero que te entretengas navegando!</p>
+  <div class="container">
+    <div class="row">
+      <div class="div-description position-absolute col-10">
+        <div class="text-light">
+          <h3 class="title-about-me">Hola, soy Darcy</h3>
+          <br>
+          <p class="description-about-me">Mi pasión por la tecnología, el diseño y la investigación me dirigió hacia el campo de UX Design. Luego de tomar un curso de desarrollo front-end en Laboratoria, decidí tomar un curso intensivo de UX Design, especializándome en ese tema. Aquí, aprendí lo esencial que es involucrar al usuario desde el inicio hasta la última etapa del proceso, para así crear proyectos con alta aceptación. 
+          </p>
+          <p class="description-about-me">Además de mi pasión por UX, me gustan mucho los videojuegos, por lo que creé mi portafolio con esta temática. 
+            ¡Espero que te entretengas navegando!</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- personaje y habilidades -->
+  <div class="container">
+    <div class="row">
+      <div class="col-2 div-personaje-xs position-absolute">
+        <div class="personaje">
+          <div class="box"></div>
+        </div>
+      <div class="col-7">
+        <div class="ml-4 list-habilities text-light">
+          <p class="text-warning">Habilidades:</p>
+          <div class="d-flex group-images">
+            <img class="img-list" src="../assets/images/figma.png" alt="figma-logo">
+            <img class="img-list" src="../assets/images/marvelapp.png" alt="marvelapp-logo">
+            <img class="img-list" src="../assets/images/design-thinking.png" alt="design-thinking">
+            <img class="img-list" src="../assets/images/ux-research.jpg" alt="ux-research">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="group-habilities d-flex">
+    <p class="text-white bg-warning p-1 pl-2 pr-2 rounded text-title-habilities">Habilidades</p>
+    <img src="../assets/images/marvelapp.png" alt="" class="image-size">
+    <img src="../assets/images/figma.png" alt="" class="figma mt-2 mb-2">
+    <div class="box-ux-research">
+      <img src="../assets/images/lupa.png" alt="" class="position-absolute m-auto pt-1 magnifier">
+      <p class="text-center text-habilities">ux-research</p>
+    </div>
+    <div class="box-design-thinking">
+      <img src="../assets/images/foco.png" alt="" class="position-absolute m-auto pt-1 light">
+      <p class="text-center text-habilities">design thinking</p>
+    </div>
+  </div>-->
   <!-- jQuery minificado -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <!-- FontAwesome fuente para íconos -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- carpeta about.js -->
   <script src="../js/about.js"></script>
 </body>
