@@ -8,10 +8,10 @@
   top: 20%;
   left: 0;
   right: 0;
-  width: 30%;
 }
 .text-title-contact{
   font-family: 'Press Start 2P', cursive;
+  font-size: 1.6em;
 }
 .text-contact{
   font-family: 'Electrolize', sans-serif;
@@ -19,14 +19,14 @@
 .div-box-info{
   background-color: rgba(253, 12, 205, .3);
   top: 40%;
-  width: 35%;
+  width: 90%;
   left: 0;
   right: 0;
 }
 .btn-download-cv{
   background-color: #FF3639;
   border: 2px solid #EB5757;
-  width: 40%;
+  width: 65%;
   height: 6vh;
   border-radius: 1vh;
   box-sizing: border-box;
@@ -38,41 +38,49 @@
   color: #22072A;
 }
 .linkedin-logo{
-  width: 6%;
-  height: 10%;
-  position: absolute;
-  bottom: 13%;
   right: 10%;
 }
-@media (max-width: 1034px){
-  .div-contact-me{
-    width: 35%;
-  }
+.linkedin-logo, .github-logo{
+  width: 10vh;
+  height: 10%;
+  position: absolute;
+  bottom: 11%;
 }
-@media (max-width: 994px){
-  .btn-download-cv{
-    width: 60%;
-  }
-  .div-contact-me{
-    width: 45%;
-  }
+.github-logo{
+  right: 27%;
 }
-@media  (max-width: 706px) {
-  .div-contact-me{
-    width: 55%;
+@media (min-width:576px){
+  .text-title-contact{
+    font-size: 1.9em;
+  }
+  .github-logo{
+    right: 24%;
   }
   .div-box-info{
-    width: 45%;
+    font-size: 1em;
   }
 }
-@media (max-width: 615px) {
-  .div-contact-me{
-    width: 75%;
-  }
-  .div-box-info{
-    width: 55%;
+@media (min-width:768px) {
+  .text-contact{
+    font-size: 1.2em;
   }
   .text-title-contact{
-    font-size: 2.2em;
+    font-size: 2.3em;
+  }
+  .github-logo{
+    right: 20%;
+  }
+  .div-box-info{
+    font-size: 1.2em;
+  }
+}
+@media (min-width:992px) {
+  .github-logo{
+    right: 17%;
+  }
+}
+@media (min-width:1200px) {
+  .github-logo{
+    right: 17%;
   }
 }
