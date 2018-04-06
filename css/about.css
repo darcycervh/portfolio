@@ -33,15 +33,15 @@
 }
 .div-personaje-xs{
   height: 17%;
-  top: 70%;
+  top: 75%;
   left: 10%;
 }
 .group-images{
   margin-right: 15%;
 }
 .img-list{
-  width: 8vh;
-  height: 7vh;
+  width: 2em;
+  height: 2em;
   margin-left: 0.4em;
 }
 .div-personaje{
