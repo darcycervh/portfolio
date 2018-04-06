@@ -35,11 +35,11 @@
 }
 .text-btn{
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.4em !important;
+  font-size: 0.7em !important;
 }
 .btn-box{
   top: 1.5rem;
-  left: 1.2rem;
+  left: 2.5rem;
 }
 .btn-box1:focus, .btn-box2:focus, .btn-box3:focus{
   outline: none;
@@ -53,7 +53,7 @@
   background-color: #002A42;
 }
 .btn-box2{
-  left: 8.27rem;
+  left: 13.3rem;
   background-color: #C5187D;
   border: none;
   cursor: pointer;
@@ -62,7 +62,7 @@
   background-color: #7D0149;
 }
 .btn-box3{
-  left: 14.5rem;
+  left: 22.7rem;
   background-color: #FF6600;
   border: none;
   cursor: pointer;

@@ -68,7 +68,7 @@
   <!-- descripción acerca de mí -->
   <div class="container">
     <div class="row">
-      <div class="div-description position-absolute col-10">
+      <div class="div-description position-absolute col-10 col-sm-5 col-md-4  col-xl-5 ml-2">
         <div class="text-light">
           <h3 class="title-about-me">Hola, soy Darcy</h3>
           <br>
@@ -83,7 +83,7 @@
   <!-- personaje y habilidades -->
   <div class="container">
     <div class="row">
-      <div class="col-2 div-personaje-xs position-absolute">
+      <div class="col-2 div-personaje-xs position-absolute d-sm-none">
         <div class="personaje">
           <div class="box"></div>
         </div>
@@ -100,19 +100,41 @@
       </div>
     </div>
   </div>
-  <!--<div class="group-habilities d-flex">
-    <p class="text-white bg-warning p-1 pl-2 pr-2 rounded text-title-habilities">Habilidades</p>
-    <img src="../assets/images/marvelapp.png" alt="" class="image-size">
-    <img src="../assets/images/figma.png" alt="" class="figma mt-2 mb-2">
-    <div class="box-ux-research">
-      <img src="../assets/images/lupa.png" alt="" class="position-absolute m-auto pt-1 magnifier">
-      <p class="text-center text-habilities">ux-research</p>
+  <!-- personaje y habilidades (caja para tamaño small)-->
+  <div class="container">
+    <div class="row">
+      <div class="col-5 div-personaje position-absolute d-none d-sm-block d-md-none">
+        <div class="box2"></div>
+        <div class="ml-4 list-habilities text-light">
+          <p class="text-warning pt-3">Habilidades:</p>
+          <div class="d-flex group-images2">
+            <img class="img-list2 mr-2" src="../assets/images/figma.png" alt="figma-logo">
+            <img class="img-list2" src="../assets/images/marvelapp.png" alt="marvelapp-logo">
+          </div>
+          <div>
+            <img class="img-list2 mt-2 mr-1" src="../assets/images/design-thinking.png" alt="design-thinking">
+            <img class="img-list2 mt-2" src="../assets/images/ux-research.jpg" alt="ux-research">
+          </div>
+      </div>
     </div>
-    <div class="box-design-thinking">
-      <img src="../assets/images/foco.png" alt="" class="position-absolute m-auto pt-1 light">
-      <p class="text-center text-habilities">design thinking</p>
+  </div>
+  <!-- personaje y habilidades (para tamaño medium a large) -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 div-personaje position-absolute d-none d-md-block">
+        <div class="box3"></div>
+        <div class="ml-4 list-habilities text-light">
+          <div class="d-flex group-images3 position-absolute">
+            <p class="text-warning pt-3">Habilidades:</p>
+            <img class="img-list2 mb-1" src="../assets/images/figma.png" alt="figma-logo">
+            <img class="img-list2 mb-1" src="../assets/images/marvelapp.png" alt="marvelapp-logo">
+            <img class="img-list2 mb-1" src="../assets/images/design-thinking.png" alt="design-thinking">
+            <img class="img-list2" src="../assets/images/ux-research.jpg" alt="ux-research">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>-->
+  </div>
   <!-- jQuery minificado -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
