@@ -123,8 +123,9 @@
   }
 }
 .group-images3{
-  flex-flow: column;
-  left: 67%;
+  left: 50%;
+  top: 7%;
+  width: 50%;
 }
 .group-habilities{
   position: absolute;
