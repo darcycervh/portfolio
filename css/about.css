@@ -1,7 +1,7 @@
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 .div-navbar{
   top: 0;
@@ -14,11 +14,11 @@
 .bg-menu{
   background-color: rgb(235, 235, 235);
   box-sizing: border-box;
-  padding: 1rem;
+  border: 2px outset gray;
+  border-radius: 2vh;
   font-family: 'Press Start 2P', cursive;
   font-size: 0.7em;
-  border-radius: 2vh;
-  border: 2px outset gray;
+  padding: 1rem;
 }
 .bg-list{
   border-radius: 1vh;
@@ -41,15 +41,15 @@
   margin-right: 15%;
 }
 .img-list{
-  width: 2em;
   height: 2em;
+  width: 2em;
   margin-left: 0.4em;
 }
 .img-list2{
-  width: 5em;
+  border-radius: 2vh;
   height: 5em;
   margin-left: 0.1em;
-  border-radius: 2vh;
+  width: 5em;
 }
 .div-personaje{
   height: 70%;
