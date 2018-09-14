@@ -42,6 +42,9 @@ texto: Open Sans
   font-size: 1.3em;
   text-shadow: #00071d 1px 1px
 }
+.text-btn{
+  font-family: 'Press Start 2P', cursive;
+}
 /***/
 #span-start-portfolio{
   animation: span infinite 2s;
@@ -86,7 +89,7 @@ texto: Open Sans
   width: 180px;
   height: 50px;
   color: #262626;
-  font-size: 20px;
+  font-size: 0.8em;
   background: #ffff;
   text-align: center;
   line-height: 50px;
